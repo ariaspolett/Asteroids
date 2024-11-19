@@ -1,0 +1,109 @@
+Legend: 
+(( Start/End ))    → Ovals (Start/End Points)
+   ________
+  /        /      
+ /  Input /       → Parallelograms (Input/Output)
+/________/
+
++-------------+  
+|   Process    |  → Rectangles (Processes)
++-------------+ 
+
+      /\        
+     /  \        
+    < Decision >  → Diamonds (Decision Points)
+     \  /        
+      \/        
+
+Flowchart:
+                      (( Start Game ))
+                             |
+                    _____________
+                   /             /
+                  / Display Menu/
+                 /_____________/
+                             |
+                    _____________
+                   /             /
+                  /  User Select /  
+                 /  Play or Exit/
+                /_____________/  
+                      /         \
+               Play               Exit
+                |                  |
+       +--------------------+   (( Exit Game ))
+       |   Enter Game Loop   |
+       +--------------------+
+                |
+   +------------------------------------+
+   |  Player Controls (Move, Shoot,     |
+   |  Pause)                            |
+   +------------------------------------+
+                |
+       +------------------+
+       |     Move Ship     |
+       +------------------+
+                |
+       +------------------+
+       |   Shoot Bullet    |
+       +------------------+
+                |
+       +------------------+
+       |  Move Asteroids   |
+       +------------------+
+                |
+              /\
+             /  \
+            < Bullet-      >
+            < Asteroid?    >
+             \  /
+              \/
+              /        \
+            Yes         No
+             |           |
++-------------------+    |
+| Destroy Asteroid  |    |
+| Increase Score    |    |
++-------------------+    |
+             |           |
+              /\
+             /  \
+            < Ship-      >
+            < Asteroid?  >
+             \  /
+              \/
+              /      \
+            Yes       No
+             |         |
++-------------------------+ |
+| Lose Life, Reset Ship    | |
++-------------------------+ |
+                |
+              /\
+             /  \
+            < Game Over?  >
+             \  /
+              \/
+                |
+              /\
+             /  \
+            < Lives Left? >
+             \  /
+              \/
+            /        \
+         Yes         No
+          |           |
++--------------------+  +---------------------+
+| Continue Game Loop |  | Display Game Over   |
++--------------------+  +---------------------+
+                             |
+                       ____________
+                      /            /
+                     / Restart?   /
+                    /____________/
+                          /        \
+                       Yes          No
+                        |            |
+            +--------------------+  (( Exit Game ))
+            |   Restart Game     |
+            +--------------------+
