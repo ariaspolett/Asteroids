@@ -24,11 +24,13 @@
 
 - Score tracking to keep the player's high score and a save progress feature so the game can be resumed if paused for a long amount of time
 
-- Game Over if the player dies or reaches the score 100,000
+- Game Over if the player dies and GAME WON if player reaches the score 100,000
+
+- There are 5 levels, each one gets harder until 100,000 points are reached.
 
 **2. User Interations:**
 
-- Controls: Keyboard (right &  left arrow keys for movement and space for rotation)
+- Controls: Keyboard (right &  left arrow keys for movement and space for rotation), Mobile and Tablet (joystick for movement and rotation)
 
 - Power-Up Usage: Players can activate power-ups for 30 seconds by shooting the power-up symbol when it appears on the screen
 
